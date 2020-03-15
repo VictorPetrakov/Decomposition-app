@@ -2,15 +2,15 @@ package by.htp.hometask.decomposition;
 
 import java.util.Scanner;
 
-//8. Составить программу, которая в массиве A[N] находит второе по величине число
-//(вывести на печать число, которое меньше максимального элемента массива, но больше
-//всех других элементов).
+//8. РЎРѕСЃС‚Р°РІРёС‚СЊ РїСЂРѕРіСЂР°РјРјСѓ, РєРѕС‚РѕСЂР°СЏ РІ РјР°СЃСЃРёРІРµ A[N] РЅР°С…РѕРґРёС‚ РІС‚РѕСЂРѕРµ РїРѕ РІРµР»РёС‡РёРЅРµ С‡РёСЃР»Рѕ
+//(РІС‹РІРµСЃС‚Рё РЅР° РїРµС‡Р°С‚СЊ С‡РёСЃР»Рѕ, РєРѕС‚РѕСЂРѕРµ РјРµРЅСЊС€Рµ РјР°РєСЃРёРјР°Р»СЊРЅРѕРіРѕ СЌР»РµРјРµРЅС‚Р° РјР°СЃСЃРёРІР°, РЅРѕ Р±РѕР»СЊС€Рµ
+//РІСЃРµС… РґСЂСѓРіРёС… СЌР»РµРјРµРЅС‚РѕРІ).
 
 public class Task08 {
 
 	public static void main(String[] args) {
 
-		System.out.println("Введите размер массива :");
+		System.out.println("Р’РІРµРґРёС‚Рµ СЂР°Р·РјРµСЂ РјР°СЃСЃРёРІР° :");
 
 		int n = scannerInt();
 
@@ -21,22 +21,22 @@ public class Task08 {
 
 		userInputArray(mas, n);
 
-		for (int i = 0; i < mas.length; i++) { // для самопроверки выводим массив на консоль
+		for (int i = 0; i < mas.length; i++) { // РґР»СЏ СЃР°РјРѕРїСЂРѕРІРµСЂРєРё РІС‹РІРѕРґРёРј РјР°СЃСЃРёРІ РЅР° РєРѕРЅСЃРѕР»СЊ
 
 			System.out.println(i + "-- " + mas[i]);
 		}
 
 		maxIndex = findMaxElemArray(mas);
 
-		System.out.println("Максимальное значение равно : " + mas[maxIndex]);
+		System.out.println("РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ СЂР°РІРЅРѕ : " + mas[maxIndex]);
 
-		System.out.println("Индекс ячейки с максимальным значением " + maxIndex);
+		System.out.println("РРЅРґРµРєСЃ СЏС‡РµР№РєРё СЃ РјР°РєСЃРёРјР°Р»СЊРЅС‹Рј Р·РЅР°С‡РµРЅРёРµРј " + maxIndex);
 
 		mas[maxIndex] = 0;
 
 		maxIndex1 = findMaxElemArray(mas);
 
-		System.out.println("Второе по величине значение равно " + mas[maxIndex1] + " у ячейки с индексом " + maxIndex1);
+		System.out.println("Р’С‚РѕСЂРѕРµ РїРѕ РІРµР»РёС‡РёРЅРµ Р·РЅР°С‡РµРЅРёРµ СЂР°РІРЅРѕ " + mas[maxIndex1] + " Сѓ СЏС‡РµР№РєРё СЃ РёРЅРґРµРєСЃРѕРј " + maxIndex1);
 
 		System.out.println();
 
@@ -49,14 +49,14 @@ public class Task08 {
 
 		int number;
 
-		System.out.println("Введите число: \r");
+		System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: \r");
 
 		while (!in.hasNextInt()) {
 
 			in.next();
 
-			System.out.println("Некорректный ввод!\r ");
-			System.out.println("Введите число: \r");
+			System.out.println("РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІРІРѕРґ!\r ");
+			System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: \r");
 		}
 		number = in.nextInt();
 
@@ -71,14 +71,14 @@ public class Task08 {
 
 		double number;
 
-		System.out.println("Введите число: \r");
+		System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: \r");
 
 		while (!in.hasNextDouble()) {
 
 			in.next();
 
-			System.out.println("Некорректный ввод! \r");
-			System.out.println("Введите число: \r");
+			System.out.println("РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІРІРѕРґ! \r");
+			System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: \r");
 		}
 
 		number = in.nextDouble();
@@ -115,3 +115,4 @@ public class Task08 {
 	}
 
 }
+
