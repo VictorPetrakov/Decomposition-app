@@ -3,19 +3,19 @@ package by.htp.hometask.decomposition;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-//15. Даны натуральные числа К и N. Написать метод(методы) формирования
-//массива А, элементами которого являются числа, сумма цифр которых равна К и 
-//которые не большее N.
+//15. Р”Р°РЅС‹ РЅР°С‚СѓСЂР°Р»СЊРЅС‹Рµ С‡РёСЃР»Р° Рљ Рё N. РќР°РїРёСЃР°С‚СЊ РјРµС‚РѕРґ(РјРµС‚РѕРґС‹) С„РѕСЂРјРёСЂРѕРІР°РЅРёСЏ
+//РјР°СЃСЃРёРІР° Рђ, СЌР»РµРјРµРЅС‚Р°РјРё РєРѕС‚РѕСЂРѕРіРѕ СЏРІР»СЏСЋС‚СЃСЏ С‡РёСЃР»Р°, СЃСѓРјРјР° С†РёС„СЂ РєРѕС‚РѕСЂС‹С… СЂР°РІРЅР° Рљ Рё 
+//РєРѕС‚РѕСЂС‹Рµ РЅРµ Р±РѕР»СЊС€РµРµ N.
 
 public class Task15 {
 
 	public static void main(String[] args) {
 
-		System.out.println("Введите К ");
+		System.out.println("Р’РІРµРґРёС‚Рµ Рљ ");
 
 		int k = scannerInt();
 
-		System.out.println("Введите N ");
+		System.out.println("Р’РІРµРґРёС‚Рµ N ");
 
 		int n = scannerInt();
 
@@ -62,14 +62,14 @@ public class Task15 {
 
 		int number;
 
-		System.out.println("Введите число: \r");
+		System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: \r");
 
 		while (!in.hasNextInt()) {
 
 			in.next();
 
-			System.out.println("Некорректный ввод!\r ");
-			System.out.println("Введите число: \r");
+			System.out.println("РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІРІРѕРґ!\r ");
+			System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: \r");
 		}
 		number = in.nextInt();
 
@@ -86,3 +86,4 @@ public class Task15 {
 	}
 
 }
+
