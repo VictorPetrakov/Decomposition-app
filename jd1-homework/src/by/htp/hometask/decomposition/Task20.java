@@ -25,14 +25,14 @@ public class Task20 {
 
 		int number;
 
-		System.out.println("Ââåäèòå ÷èñëî: \r");
+		System.out.println("Введите число: \r");
 
 		while (!in.hasNextInt()) {
 
 			in.next();
 
-			System.out.println("Íåêîððåêòíûé ââîä!\r ");
-			System.out.println("Ââåäèòå ÷èñëî: \r");
+			System.out.println("Некорректный ввод!\r ");
+			System.out.println("Введите число: \r");
 		}
 		number = in.nextInt();
 
@@ -46,7 +46,7 @@ public class Task20 {
 
 		while (n > 0) {
 
-			System.out.println("ââåäåíî " + n);
+			System.out.println("введено " + n);
 
 			int sum1 = sumNum(n);
 
@@ -56,7 +56,7 @@ public class Task20 {
 
 		}
 
-		System.out.println("Êîëè÷åñòâî âû÷èòàíèé " + count);
+		System.out.println("Количество вычитаний " + count);
 
 	}
 
