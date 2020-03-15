@@ -1,6 +1,6 @@
 package by.htp.hometask.decomposition;
 
-//1. Треугольник задан координатами своих вершин. Написать метод для вычисления его площади
+//1. РўСЂРµСѓРіРѕР»СЊРЅРёРє Р·Р°РґР°РЅ РєРѕРѕСЂРґРёРЅР°С‚Р°РјРё СЃРІРѕРёС… РІРµСЂС€РёРЅ. РќР°РїРёСЃР°С‚СЊ РјРµС‚РѕРґ РґР»СЏ РІС‹С‡РёСЃР»РµРЅРёСЏ РµРіРѕ РїР»РѕС‰Р°РґРё
 
 public class Task01 {
 
@@ -30,7 +30,7 @@ public class Task01 {
 
 		double area = areaTriangle(p1, sideA, sideB, sideC);
 
-		System.out.println("Площадь треугольника равна " + area);
+		System.out.println("РџР»РѕС‰Р°РґСЊ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР° СЂР°РІРЅР° " + area);
 		
 		System.out.println();
 	}
@@ -66,3 +66,4 @@ public class Task01 {
 
 	}
 }
+
