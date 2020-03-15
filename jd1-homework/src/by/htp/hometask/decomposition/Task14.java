@@ -2,8 +2,8 @@ package by.htp.hometask.decomposition;
 
 import java.util.Scanner;
 
-//14. Написать метод(методы), определяющий, в каком из данных двух чисел
-//больше цифр.
+//14. РќР°РїРёСЃР°С‚СЊ РјРµС‚РѕРґ(РјРµС‚РѕРґС‹), РѕРїСЂРµРґРµР»СЏСЋС‰РёР№, РІ РєР°РєРѕРј РёР· РґР°РЅРЅС‹С… РґРІСѓС… С‡РёСЃРµР»
+//Р±РѕР»СЊС€Рµ С†РёС„СЂ.
 
 public class Task14 {
 
@@ -42,17 +42,17 @@ public class Task14 {
 
 		if (count < count1) {
 
-			System.out.println("В числе " + m + " больше цифр чем в  " + n);
+			System.out.println("Р’ С‡РёСЃР»Рµ " + m + " Р±РѕР»СЊС€Рµ С†РёС„СЂ С‡РµРј РІ  " + n);
 		}
 
 		if (count == count1) {
 
-			System.out.println("В числе " + m + " столько же цифр что и в  " + n);
+			System.out.println("Р’ С‡РёСЃР»Рµ " + m + " СЃС‚РѕР»СЊРєРѕ Р¶Рµ С†РёС„СЂ С‡С‚Рѕ Рё РІ  " + n);
 		}
 
 		if (count > count1) {
 
-			System.out.println("В числе " + m + " меньше цифр чем " + n);
+			System.out.println("Р’ С‡РёСЃР»Рµ " + m + " РјРµРЅСЊС€Рµ С†РёС„СЂ С‡РµРј " + n);
 		}
 	}
 
@@ -63,14 +63,14 @@ public class Task14 {
 
 		int number;
 
-		System.out.println("Введите число: \r");
+		System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: \r");
 
 		while (!in.hasNextInt()) {
 
 			in.next();
 
-			System.out.println("Некорректный ввод!\r ");
-			System.out.println("Введите число: \r");
+			System.out.println("РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІРІРѕРґ!\r ");
+			System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: \r");
 		}
 		number = in.nextInt();
 
@@ -79,3 +79,4 @@ public class Task14 {
 	}
 
 }
+
