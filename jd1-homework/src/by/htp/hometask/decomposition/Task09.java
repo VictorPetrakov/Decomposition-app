@@ -2,13 +2,13 @@ package by.htp.hometask.decomposition;
 
 import java.util.Scanner;
 
-//9. Написать метод(методы), проверяющий, являются ли данные три числа взаимно простыми.
+//9. РќР°РїРёСЃР°С‚СЊ РјРµС‚РѕРґ(РјРµС‚РѕРґС‹), РїСЂРѕРІРµСЂСЏСЋС‰РёР№, СЏРІР»СЏСЋС‚СЃСЏ Р»Рё РґР°РЅРЅС‹Рµ С‚СЂРё С‡РёСЃР»Р° РІР·Р°РёРјРЅРѕ РїСЂРѕСЃС‚С‹РјРё.
 
 public class Task09 {
 
 	public static void main(String[] args) {
 
-		System.out.println("Введите три числа :");
+		System.out.println("Р’РІРµРґРёС‚Рµ С‚СЂРё С‡РёСЃР»Р° :");
 
 		int a = scannerInt();
 		int b = scannerInt();
@@ -26,10 +26,10 @@ public class Task09 {
 
 		if (x == 1) {
 
-			System.out.println("Числа " + a + " " + b + " " + c + " являются простыми!");
+			System.out.println("Р§РёСЃР»Р° " + a + " " + b + " " + c + " СЏРІР»СЏСЋС‚СЃСЏ РїСЂРѕСЃС‚С‹РјРё!");
 		} else {
 
-			System.out.println("Числа " + a + " " + b + " " + c + " не являются простыми!");
+			System.out.println("Р§РёСЃР»Р° " + a + " " + b + " " + c + " РЅРµ СЏРІР»СЏСЋС‚СЃСЏ РїСЂРѕСЃС‚С‹РјРё!");
 		}
 
 		System.out.println();
@@ -79,14 +79,14 @@ public class Task09 {
 
 		int number;
 
-		System.out.println("Введите число: \r");
+		System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: \r");
 
 		while (!in.hasNextInt()) {
 
 			in.next();
 
-			System.out.println("Некорректный ввод!\r ");
-			System.out.println("Введите число: \r");
+			System.out.println("РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІРІРѕРґ!\r ");
+			System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: \r");
 		}
 		number = in.nextInt();
 
@@ -94,3 +94,4 @@ public class Task09 {
 
 	}
 }
+
