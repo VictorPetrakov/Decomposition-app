@@ -4,15 +4,15 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-//7. На плоскости заданы своими координатами n точек. Написать метод(методы), 
-//определяющие, между какими из пар точек самое большое расстояние. Указание. 
-//Координаты точек занести в массив.
+//7. РќР° РїР»РѕСЃРєРѕСЃС‚Рё Р·Р°РґР°РЅС‹ СЃРІРѕРёРјРё РєРѕРѕСЂРґРёРЅР°С‚Р°РјРё n С‚РѕС‡РµРє. РќР°РїРёСЃР°С‚СЊ РјРµС‚РѕРґ(РјРµС‚РѕРґС‹), 
+//РѕРїСЂРµРґРµР»СЏСЋС‰РёРµ, РјРµР¶РґСѓ РєР°РєРёРјРё РёР· РїР°СЂ С‚РѕС‡РµРє СЃР°РјРѕРµ Р±РѕР»СЊС€РѕРµ СЂР°СЃСЃС‚РѕСЏРЅРёРµ. РЈРєР°Р·Р°РЅРёРµ. 
+//РљРѕРѕСЂРґРёРЅР°С‚С‹ С‚РѕС‡РµРє Р·Р°РЅРµСЃС‚Рё РІ РјР°СЃСЃРёРІ.
 
 public class Task07 {
 
 	public static void main(String[] args) {
 
-		System.out.println("Введите количество точек: ");
+		System.out.println("Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕС‡РµРє: ");
 
 		int n = scannerInt();
 
@@ -20,11 +20,11 @@ public class Task07 {
 
 		ArrayList<Double> distance = new ArrayList<Double>();
 
-		userInputArray(point, n);// заполнение массива координат пользователем
+		userInputArray(point, n);// Р·Р°РїРѕР»РЅРµРЅРёРµ РјР°СЃСЃРёРІР° РєРѕРѕСЂРґРёРЅР°С‚ РїРѕР»СЊР·РѕРІР°С‚РµР»РµРј
 
-		distBetweenPoint(point, distance, n);// вычисление расстояния между точками
+		distBetweenPoint(point, distance, n);// РІС‹С‡РёСЃР»РµРЅРёРµ СЂР°СЃСЃС‚РѕСЏРЅРёСЏ РјРµР¶РґСѓ С‚РѕС‡РєР°РјРё
 
-		findMaxDist(point, distance, n);// поиск и вывод максимального растояния
+		findMaxDist(point, distance, n);// РїРѕРёСЃРє Рё РІС‹РІРѕРґ РјР°РєСЃРёРјР°Р»СЊРЅРѕРіРѕ СЂР°СЃС‚РѕСЏРЅРёСЏ
 
 	}
 
@@ -35,14 +35,14 @@ public class Task07 {
 
 		int number;
 
-		System.out.println("Введите число: \r");
+		System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: \r");
 
 		while (!in.hasNextInt()) {
 
 			in.next();
 
-			System.out.println("Некорректный ввод!\r ");
-			System.out.println("Введите число: \r");
+			System.out.println("РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІРІРѕРґ!\r ");
+			System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: \r");
 		}
 		number = in.nextInt();
 
@@ -57,14 +57,14 @@ public class Task07 {
 
 		double number;
 
-		System.out.println("Введите число: \r");
+		System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: \r");
 
 		while (!in.hasNextDouble()) {
 
 			in.next();
 
-			System.out.println("Некорректный ввод! \r");
-			System.out.println("Введите число: \r");
+			System.out.println("РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІРІРѕРґ! \r");
+			System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: \r");
 		}
 
 		number = in.nextDouble();
@@ -105,7 +105,7 @@ public class Task07 {
 
 		int index = 1 + distance.indexOf(max);
 
-		// System.out.println("максимальное расстояние под индексом " + index);
+		// System.out.println("РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ СЂР°СЃСЃС‚РѕСЏРЅРёРµ РїРѕРґ РёРЅРґРµРєСЃРѕРј " + index);
 
 		int count = 0;
 
@@ -117,9 +117,9 @@ public class Task07 {
 
 				if (count == index) {
 
-					System.out.println("максимальное расстояние между " + ((i / 2) + 1) + " и " + ((j / 2) + 1) + " точкой ");
+					System.out.println("РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ СЂР°СЃСЃС‚РѕСЏРЅРёРµ РјРµР¶РґСѓ " + ((i / 2) + 1) + " Рё " + ((j / 2) + 1) + " С‚РѕС‡РєРѕР№ ");
 
-					System.out.println("и оно составляет : " + Collections.max(distance));
+					System.out.println("Рё РѕРЅРѕ СЃРѕСЃС‚Р°РІР»СЏРµС‚ : " + Collections.max(distance));
 
 					break;
 				}
@@ -128,3 +128,4 @@ public class Task07 {
 	}
 
 }
+
