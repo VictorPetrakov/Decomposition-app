@@ -2,8 +2,8 @@ package by.htp.hometask.decomposition;
 
 import java.util.Scanner;
 
-//13. Дано натуральное число N. Написать метод(методы) для формирования
-//массива, элементами которого являются цифры числа N.
+//13. Р”Р°РЅРѕ РЅР°С‚СѓСЂР°Р»СЊРЅРѕРµ С‡РёСЃР»Рѕ N. РќР°РїРёСЃР°С‚СЊ РјРµС‚РѕРґ(РјРµС‚РѕРґС‹) РґР»СЏ С„РѕСЂРјРёСЂРѕРІР°РЅРёСЏ
+//РјР°СЃСЃРёРІР°, СЌР»РµРјРµРЅС‚Р°РјРё РєРѕС‚РѕСЂРѕРіРѕ СЏРІР»СЏСЋС‚СЃСЏ С†РёС„СЂС‹ С‡РёСЃР»Р° N.
 
 public class Task13 {
 
@@ -74,14 +74,14 @@ public class Task13 {
 
 		int number;
 
-		System.out.println("Введите число: \r");
+		System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: \r");
 
 		while (!in.hasNextInt()) {
 
 			in.next();
 
-			System.out.println("Некорректный ввод!\r ");
-			System.out.println("Введите число: \r");
+			System.out.println("РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІРІРѕРґ!\r ");
+			System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: \r");
 		}
 		number = in.nextInt();
 
@@ -89,3 +89,4 @@ public class Task13 {
 
 	}
 }
+
