@@ -2,38 +2,38 @@ package by.htp.hometask.decomposition;
 
 import java.util.Scanner;
 
-//12. Даны числа X, Y, Z, Т — длины сторон четырехугольника. Написать метод(методы)
-//вычисления его площади, если угол между сторонами длиной X и Y— прямой.
+//12. Р”Р°РЅС‹ С‡РёСЃР»Р° X, Y, Z, Рў вЂ” РґР»РёРЅС‹ СЃС‚РѕСЂРѕРЅ С‡РµС‚С‹СЂРµС…СѓРіРѕР»СЊРЅРёРєР°. РќР°РїРёСЃР°С‚СЊ РјРµС‚РѕРґ(РјРµС‚РѕРґС‹)
+//РІС‹С‡РёСЃР»РµРЅРёСЏ РµРіРѕ РїР»РѕС‰Р°РґРё, РµСЃР»Рё СѓРіРѕР» РјРµР¶РґСѓ СЃС‚РѕСЂРѕРЅР°РјРё РґР»РёРЅРѕР№ X Рё YвЂ” РїСЂСЏРјРѕР№.
 
 public class Task12 {
 
 	public static void main(String[] args) {
 
-		System.out.println("Введите сторону x : ");
+		System.out.println("Р’РІРµРґРёС‚Рµ СЃС‚РѕСЂРѕРЅСѓ x : ");
 
 		double x = scannerDouble();
 
-		System.out.println("Введите сторону y : ");
+		System.out.println("Р’РІРµРґРёС‚Рµ СЃС‚РѕСЂРѕРЅСѓ y : ");
 
 		double y = scannerDouble();
 
-		System.out.println("Введите сторону z : ");
+		System.out.println("Р’РІРµРґРёС‚Рµ СЃС‚РѕСЂРѕРЅСѓ z : ");
 
 		double z = scannerDouble();
 
-		System.out.println("Введите сторону t : ");
+		System.out.println("Р’РІРµРґРёС‚Рµ СЃС‚РѕСЂРѕРЅСѓ t : ");
 
 		double t = scannerDouble();
 
 		double semiP;
-		semiP = semiPerimetrQuadrangle(x, y, z, t);//полупериметр
+		semiP = semiPerimetrQuadrangle(x, y, z, t);//РїРѕР»СѓРїРµСЂРёРјРµС‚СЂ
 
 		double angle;
-		angle = angleOpposite(x, y, z, t);//угол напротив прямого
+		angle = angleOpposite(x, y, z, t);//СѓРіРѕР» РЅР°РїСЂРѕС‚РёРІ РїСЂСЏРјРѕРіРѕ
 
-		double area = areaQuadrangle(semiP, x, y, z, t, angle);//площадь четырехугольника
+		double area = areaQuadrangle(semiP, x, y, z, t, angle);//РїР»РѕС‰Р°РґСЊ С‡РµС‚С‹СЂРµС…СѓРіРѕР»СЊРЅРёРєР°
 
-		System.out.println("Площадь четырехугольника с прямым угол равна " + area);
+		System.out.println("РџР»РѕС‰Р°РґСЊ С‡РµС‚С‹СЂРµС…СѓРіРѕР»СЊРЅРёРєР° СЃ РїСЂСЏРјС‹Рј СѓРіРѕР» СЂР°РІРЅР° " + area);
 
 		System.out.println();
 	}
@@ -50,10 +50,10 @@ public class Task12 {
 	public static double angleOpposite(double x, double y, double z, double t) {
 
 		double a;
-		a = Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2));// диагональ четырехугольника с одним прямым углом
+		a = Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2));// РґРёР°РіРѕРЅР°Р»СЊ С‡РµС‚С‹СЂРµС…СѓРіРѕР»СЊРЅРёРєР° СЃ РѕРґРЅРёРј РїСЂСЏРјС‹Рј СѓРіР»РѕРј
 
 		double w;
-		w = Math.acos((Math.pow(z, 2) + Math.pow(t, 2) - Math.pow(a, 2)) / 2 * z * t);// угол напротив прямого
+		w = Math.acos((Math.pow(z, 2) + Math.pow(t, 2) - Math.pow(a, 2)) / 2 * z * t);// СѓРіРѕР» РЅР°РїСЂРѕС‚РёРІ РїСЂСЏРјРѕРіРѕ
 
 		return w;
 	}
@@ -74,14 +74,14 @@ public class Task12 {
 
 		double number;
 
-		System.out.println("Введите число: \r");
+		System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: \r");
 
 		while (!in.hasNextDouble()) {
 
 			in.next();
 
-			System.out.println("Некорректный ввод! \r");
-			System.out.println("Введите число: \r");
+			System.out.println("РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІРІРѕРґ! \r");
+			System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: \r");
 		}
 
 		number = in.nextDouble();
@@ -91,3 +91,4 @@ public class Task12 {
 	}
 
 }
+
