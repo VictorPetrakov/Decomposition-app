@@ -2,15 +2,15 @@ package by.htp.hometask.decomposition;
 
 import java.util.Scanner;
 
-//11. Задан массив D. Определить следующие суммы: D[l] + D[2] + D[3];
-//D[3] + D[4] + D[5]; D[4] +D[5] +D[6]. Пояснение. Составить метод(методы) для вычисления 
-//суммы трех последовательно расположенных элементов массива с номерами от k до m.")
+//11. Р—Р°РґР°РЅ РјР°СЃСЃРёРІ D. РћРїСЂРµРґРµР»РёС‚СЊ СЃР»РµРґСѓСЋС‰РёРµ СЃСѓРјРјС‹: D[l] + D[2] + D[3];
+//D[3] + D[4] + D[5]; D[4] +D[5] +D[6]. РџРѕСЏСЃРЅРµРЅРёРµ. РЎРѕСЃС‚Р°РІРёС‚СЊ РјРµС‚РѕРґ(РјРµС‚РѕРґС‹) РґР»СЏ РІС‹С‡РёСЃР»РµРЅРёСЏ 
+//СЃСѓРјРјС‹ С‚СЂРµС… РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕ СЂР°СЃРїРѕР»РѕР¶РµРЅРЅС‹С… СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР° СЃ РЅРѕРјРµСЂР°РјРё РѕС‚ k РґРѕ m.")
 
 public class Task11 {
 
 	public static void main(String[] args) {
 
-		System.out.println("Введите величну массива ");
+		System.out.println("Р’РІРµРґРёС‚Рµ РІРµР»РёС‡РЅСѓ РјР°СЃСЃРёРІР° ");
 
 		int n = scannerInt();
 
@@ -33,7 +33,7 @@ public class Task11 {
 
 	public static double sum3ElemArray(double[] d, int n) {
 
-		System.out.println("Введите с какого индекса складывать три последовательно расположенных элемента");
+		System.out.println("Р’РІРµРґРёС‚Рµ СЃ РєР°РєРѕРіРѕ РёРЅРґРµРєСЃР° СЃРєР»Р°РґС‹РІР°С‚СЊ С‚СЂРё РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕ СЂР°СЃРїРѕР»РѕР¶РµРЅРЅС‹С… СЌР»РµРјРµРЅС‚Р°");
 
 		int k = scannerInt();
 
@@ -45,7 +45,7 @@ public class Task11 {
 
 				sum = d[i] + d[i + 1] + d[i + 2];
 
-				System.out.println("Сумма D[" + k + "] + D[" + (k + 1) + "] + D[" + (k + 2) + "] равна " + sum);
+				System.out.println("РЎСѓРјРјР° D[" + k + "] + D[" + (k + 1) + "] + D[" + (k + 2) + "] СЂР°РІРЅР° " + sum);
 
 			}
 		}
@@ -60,14 +60,14 @@ public class Task11 {
 
 		double number;
 
-		System.out.println("Введите число: \r");
+		System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: \r");
 
 		while (!in.hasNextDouble()) {
 
 			in.next();
 
-			System.out.println("Некорректный ввод! \r");
-			System.out.println("Введите число: \r");
+			System.out.println("РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІРІРѕРґ! \r");
+			System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: \r");
 		}
 
 		number = in.nextDouble();
@@ -83,14 +83,14 @@ public class Task11 {
 
 		int number;
 
-		System.out.println("Введите число: \r");
+		System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: \r");
 
 		while (!in.hasNextInt()) {
 
 			in.next();
 
-			System.out.println("Некорректный ввод!\r ");
-			System.out.println("Введите число: \r");
+			System.out.println("РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІРІРѕРґ!\r ");
+			System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: \r");
 		}
 		number = in.nextInt();
 
@@ -99,3 +99,4 @@ public class Task11 {
 	}
 
 }
+
